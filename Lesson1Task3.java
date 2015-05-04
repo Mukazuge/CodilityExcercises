@@ -3,13 +3,27 @@
 
 // you can use System.out.println for debugging purposes, e.g.
 // System.out.println("this is a debug message");
+/*
+* I want to improve it until i get the full correctness test
+*
+* simple_positive
+ simple test with positive numbers, length = 5	1.349 s	WRONG ANSWER
+ got 8 expected 4
+ simple_negative
+ simple test with negative numbers, length = 5	1.355 s	WRONG ANSWER
+ got 9 expected 3
+ small_random
+ random small, length = 100	1.356 s	WRONG ANSWER
+ got 11711 expected 39
+ small_range
+ range sequence, length = ~1,000	1.247 s	WRONG ANSWER
+ got 496502 expected 56
+ small
+* */
+
 
 class Solution {
     public int solution(int[] A) {
-        /*
-        un var de return
-        un arrelo que guarde resultados y que compare con cada resultado anterior si es mayor este al pasado reescribre var
-        */
         int minValue = 0;
         int firstValue = 0;
         int secondValue = 0;
